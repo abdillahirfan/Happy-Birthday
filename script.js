@@ -6,7 +6,6 @@ function initengahan(){
   }
   
   async function mulainama() {
-    //window.location.replace("https://www.feeldream.my.id/2023/01/script-html-bucin.html");
     bodyblur.style="opacity:.7";
     wallpaper.style="transform: scale(1);";
     fotostiker.style="display:inline-flex;";setTimeout(ftmuncul,200);
@@ -42,7 +41,7 @@ function initengahan(){
   vketik1=kalimat.innerHTML;kalimat.innerHTML = "";
   function mulaiketik1(){
   new TypeIt("#kalimat", {
-  strings: ["" + vketik1], startDelay: 400, speed: 20, cursor: false, deleteSpeed: 20, breakLines: false, waitUntilVisible: true, lifelike: true,
+  strings: ["" + vketik1], startDelay: 400, speed: 25, cursor: false, deleteSpeed: 20, breakLines: false, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
     aktiopsL();
   },}).go();
@@ -70,9 +69,9 @@ function initengahan(){
   wallpaper.style="transform: scale(1.5);";
   kolombaru.style="";kalimat.innerHTML="";
   new TypeIt("#kalimat", {
-  strings: ["" + vketik2], startDelay: 20, speed: 40, cursor: true, deleteSpeed: 50, breakLines: false, waitUntilVisible: true, lifelike: true,
+  strings: ["" + vketik2], startDelay: 20, speed: 30, cursor: true, deleteSpeed: 50, breakLines: false, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    setTimeout(aktipesan3,2000);
+    setTimeout(aktipesan3,3000);
   },}).go();
   }
   vketik3=pesan3.innerHTML;pesan3.innerHTML="";
@@ -84,7 +83,7 @@ function initengahan(){
   new TypeIt("#pesan3", {
   strings: ["" + vketik3], startDelay: 1, speed: 45, cursor: true, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    pesan3.innerHTML=vketik3;setTimeout(otomatis,2000);setTimeout(aktipesan4,1010);
+    pesan3.innerHTML=vketik3;setTimeout(otomatis,600);setTimeout(aktipesan4,1010);
   },}).go();
   }
   function aktipesan4(){
@@ -97,7 +96,7 @@ function initengahan(){
   new TypeIt("#pesan5", {
   strings: ["" + vketik5], startDelay: 1, speed: 52, cursor: true, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    pesan5.innerHTML=vketik5 + " ><";setTimeout(aktipesan6,800);
+    pesan5.innerHTML=vketik5 + " ><";setTimeout(aktipesan6,2000);
   },}).go();
   }
   vketik6=pesan6.innerHTML;pesan6.innerHTML="";
@@ -106,7 +105,7 @@ function initengahan(){
   new TypeIt("#pesan6", {
   strings: ["" + vketik6], startDelay: 1, speed: 52, cursor: true, waitUntilVisible: true, lifelike: true,
   afterComplete: function(){
-    pesan6.innerHTML=vketik6;setTimeout(aktipesan7,800);
+    pesan6.innerHTML=vketik6;setTimeout(aktipesan7,3500);
   },}).go();
   }
   vketik7=pesan7.innerHTML;pesan7.innerHTML="";
@@ -134,6 +133,7 @@ function initengahan(){
   },}).go();
   }
   function aktipesan10(){
+    startDelay: 3000,
     wallpaper.style="transform: scale(1.5);";
     fthilang();ftganti=5;setTimeout(ftmuncul,300);
     otoaktipesan=1;otomatis();setTimeout(toaktipesan,300);
@@ -151,10 +151,10 @@ function initengahan(){
   
   async function pertanyaan(){var { isConfirmed: prtanya } = await swals.fire({title: nama + ' ' + tanya, text: '' + opstanya, imageUrl: '' + fotostiker6.src, showCancelButton: true, confirmButtonText: '' + tompositif, cancelButtonText: '' + tomnegatif,});
     if(prtanya){
-  await swalst.fire({title: '' + katatambahan.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src,});
+  await swalst.fire({title: '' + katatambahan.innerHTML, timer: 5000, imageUrl: '' + stikerditolak.src,});
       vketik8=vketik81;aktipesan8();
     } else {
-	await swalst.fire({title: '' + kataditolak.innerHTML, timer: 2000, imageUrl: '' + stikerditolak.src,});
+	await swalst.fire({title: '' + kataditolak.innerHTML, timer: 5000, imageUrl: '' + stikerditolak.src,});
       vketik8="";aktipesan8();
     }
     }
